@@ -1,0 +1,22 @@
+table,th, td{
+    border: solid 1px black;
+}
+
+h3 a{
+text-decoration: none;
+color: green;
+background-color: lawngreen;
+padding: 5px;
+border: 1px solid green;
+}
+td a {
+    text-decoration: none;
+    color: blue;
+    padding: 2px;
+    border: 1px solid blue;  
+    background-color: aqua;
+    margin: 2px;
+}
+.buttons{
+    width: 70px;
+}
