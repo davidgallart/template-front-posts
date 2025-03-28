@@ -1,9 +1,14 @@
 import axios from 'axios';
-
+import 'react-toastify/dist/ReactToastify.css';
 const API_URL = 'https://jsonplaceholder.typicode.com/posts/';
 
+
+
+
 export const getAllPosts = async () => {
-  const response = await axios.get(`${API_URL}`);
+  const response = await axios.get(`${API_URL}`); 
+
+
   return response.data;
 }
 
@@ -23,6 +28,8 @@ export const updatePost = async (id: any, postData: any) => {
   return response.data;
 };
 
-export const deletePost = async (id: any) => {
+export const deletePost = async (id: any) => { 
+
   await axios.delete(`${API_URL}${id}`);
+ 
 };
